@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZUIL</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/styles/style.css' %}">
+</head>
+<body>
+    <div class="page">
+        <div class="topLayout">
+            <div class="returnButton"><a href="{% url 'home'%}"><img src="{% static 'polls/images/return.svg' %}" alt="backButton"></a></div>
+            <div class="infoButton"><a class="infoButton"><img src="{% static 'polls/images/info.svg' %}"></a></div>
+        </div>
+        <div class="buttonLayout">
+            <button class="clickButton">
+                <img class="clickIcon" src="{% static 'polls/images/borrow.svg' %}">
+                <a href="{% url 'scanScreen'%}" class="center">LENEN</a>
+            </button>
+            <button class="clickButton">
+                <img class="clickIcon" src="{% static 'polls/images/refund.svg' %}">
+                <a href="{% url 'scanScreen'%}" class="center">TERUGBRENGEN</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

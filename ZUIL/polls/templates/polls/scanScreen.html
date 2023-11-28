@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Template</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/styles/style.css' %}">
+</head>
+<body>
+    <div class="page">
+        <div class="topLayout">
+            <div class="returnButton"><a href="{% url 'choiseScreen'%}"><img src="{% static 'polls/images/return.svg' %}" alt="backButton"></a></div>
+            <div class="infoButton"><a class="infoButton"><img src="{% static 'polls/images/info.svg' %}"></a></div>
+        </div>
+        <div class="scanLayout">
+            <div class="imageWrapper">
+                <a href="{% url 'scanItemScreen'%}">
+                    <img class="scanImage" src="{% static 'polls/images/scan.svg' %}">
+                </a>
+            </div>
+            <div class="imageWrapper">
+                <img class="arrowImage" src="{% static 'polls/images/arrow.svg' %}">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

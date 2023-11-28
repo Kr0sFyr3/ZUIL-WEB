@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Template</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/styles/style.css' %}">
+</head>
+<body>
+    <div class="page">
+        <div class="topLayout">
+            <div class="infoButton returnInfoButton"><a class="infoButton"><img src="{% static 'polls/images/info.svg' %}"></a></div>
+        </div>
+        <div class="scanLayout" style="max-width: 30%;">
+            <div class="imageWrapper">
+                <img class="scanImage" src="{% static 'polls/images/returnItem.svg' %}">
+            </div>
+            <p class="scanReturnText">PLAATS HET ITEM TERUG OP ZIJN PLEK</p>
+            <button class="returnItemButton"><a href="{% url 'scanItemScreen'%}">MEER TERUGBRENGEN</a></button>
+            <button class="returnItemButton"><a href="{% url 'home'%}">KLAAR</a></button>
+        </div>
+    </div>
+</body>
+</html>
