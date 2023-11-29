@@ -11,13 +11,13 @@
             <div class="returnButton"><button class="cancelButton"><a href="{% url 'home'%}">ANNULEREN</a></button></div>
             <div class="infoButton"><a class="infoButton"><img src="{% static 'polls/images/info.svg' %}"></a></div>
         </div>
-        <div class="scanLayout" style="max-width: 30%;">
-            <p class="scanText">SCAN HET ITEM DAT U WILT TERUGBRENGEN</p>
+        <div class="scanLayout" style="max-width: 40%; max-height: 80vh;">
+            <p class="scanText">1 PRODUCT GERESERVEERD</p>
             <div class="imageWrapper">
-                <a href="{% url 'returnScreen'%}">
-                    <img class="scanImage" src="{% static 'polls/images/scanItem.svg' %}">
-                </a>
+                <img class="scanImageLend" src="{% static 'polls/images/scanItem.svg' %}">
             </div>
+            <p class="scanText" style="margin-top: 10px;">SCAN NOG EEN PRODUCT ALS JE MEER WILT RESERVEREN</p>
+            <button class="returnItemButton"><a href="{% url 'home'%}">IK BEN KLAAR</a></button>
         </div>
     </div>
 </body>
