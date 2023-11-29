@@ -294,3 +294,17 @@ a{
         font-size: 20px;
     }
 }
+
+/* lendMultipleScreen css */
+
+.scanImageLend{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-height:740px){
+    .scanImageLend{
+        width: 60%
+    }
+}

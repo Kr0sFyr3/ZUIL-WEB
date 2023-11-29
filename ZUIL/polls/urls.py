@@ -9,5 +9,7 @@ urlpatterns = [
     path("scan/", views.scanScreen, name='scanScreen'),
     path("scanItem/", views.scanItemScreen, name="scanItemScreen"),
     path("return/", views.returnScreen, name="returnScreen"),
+    path("lend/", views.lendScreen, name="lendScreen"),
+    path("scanned/", views.lendMultipleScreen, name="lendMultipleScreen"),
     #path('execute_script/', execute_script, name='execute_script'),
 ]

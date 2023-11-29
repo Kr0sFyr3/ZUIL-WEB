@@ -28,3 +28,9 @@ def scanItemScreen(request):
 
 def returnScreen(request):
     return render(request, 'polls/returnScreen.html')
+
+def lendScreen(request):
+    return render(request, 'polls/lendScreen.html')
+
+def lendMultipleScreen(request):
+    return render(request, 'polls/lendMultipleScreen.html')
