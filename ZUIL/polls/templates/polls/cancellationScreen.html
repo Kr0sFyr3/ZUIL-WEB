@@ -10,12 +10,11 @@
         <div class="topLayout">
             <div class="infoButton returnInfoButton"><a class="infoButton"><img src="{% static 'polls/images/info.svg' %}"></a></div>
         </div>
-        <div class="scanLayout" style="max-width: 30%;">
+        <div class="scanLayout" style="max-width: 40%; min-height: 80vh;">
             <div class="imageWrapper">
-                <img class="scanImage" src="{% static 'polls/images/returnItem.svg' %}">
+                <img class="scanImage" src="{% static 'polls/images/cancellation.svg' %}">
             </div>
-            <b class="scanReturnText">PLAATS HET ITEM TERUG OP ZIJN PLEK</b>
-            <button class="returnItemButton"><a href="{% url 'scanItemScreen'%}">MEER TERUGBRENGEN</a></button>
+            <b class="scanText" style="margin-top: 75px; margin-bottom: 75px;">PLAATS DE ITEMS TERUG OP HUN PLAATS</b>
             <button class="returnItemButton"><a href="{% url 'home'%}">KLAAR</a></button>
         </div>
     </div>

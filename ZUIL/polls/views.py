@@ -34,3 +34,12 @@ def lendScreen(request):
 
 def lendMultipleScreen(request):
     return render(request, 'polls/lendMultipleScreen.html')
+
+def reservationScreen(request):
+    return render(request, 'polls/reservationScreen.html')
+
+def confirmationScreen(request):
+    return render(request, 'polls/confirmationScreen.html')
+
+def cancellationScreen(request):
+    return render(request, 'polls/cancellationScreen.html')

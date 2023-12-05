@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZUIL</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/styles/style.css' %}">
+</head>
+<body>
+    <div class="page">
+        <div class="topLayout">
+            <div class="returnButton"><button class="cancelButton"><a href="{% url 'cancellationScreen'%}">ANNULEREN</a></button></div>
+            <div class="infoButton"><a class="infoButton"><img src="{% static 'polls/images/info.svg' %}"></a></div>
+        </div>
+        <div class="reservationTableViewContainer">
+            <div class="reservationTableView">
+                <div class="itemFrame">
+                    <img src="{% static 'polls/images/dummyBook.svg' %}">
+                    <div class="textItemFrame">
+                        <h3 class="loanFace">UITGELEEND</h3>
+                        <br>
+                        <h2>BOEK 1 ICT</h2>
+                        <h4>AUTEUR</h4>
+                        <br>
+                        <p>DESCRIPTION: LOREM IPSUM IS AN EXAMPLE TEXT COMMONLY USED IN DESIGN</p>
+                    </div>
+                </div>
+                <div class="itemFrame">
+                    <img src="{% static 'polls/images/dummyBook.svg' %}">
+                    <div class="textItemFrame">
+                        <h3 class="loanFace">UITGELEEND</h3>
+                        <br>
+                        <h2>BOEK 1 ICT</h2>
+                        <h4>AUTEUR</h4>
+                        <br>
+                        <p>DESCRIPTION: LOREM IPSUM IS AN EXAMPLE TEXT COMMONLY USED IN DESIGN</p>
+                    </div>
+                </div>
+                <div class="itemFrame">
+                    <img src="{% static 'polls/images/dummyBook.svg' %}">
+                    <div class="textItemFrame">
+                        <h3 class="loanFace">UITGELEEND</h3>
+                        <br>
+                        <h2>BOEK 1 ICT</h2>
+                        <h4>AUTEUR</h4>
+                        <br>
+                        <p>DESCRIPTION: LOREM IPSUM IS AN EXAMPLE TEXT COMMONLY USED IN DESIGN</p>
+                    </div>
+                </div>
+                <div class="itemFrame">
+                    <img src="{% static 'polls/images/dummyBook.svg' %}">
+                    <div class="textItemFrame">
+                        <h3 class="loanFace">UITGELEEND</h3>
+                        <br>
+                        <h2>BOEK 1 ICT</h2>
+                        <h4>AUTEUR</h4>
+                        <br>
+                        <p>DESCRIPTION: LOREM IPSUM IS AN EXAMPLE TEXT COMMONLY USED IN DESIGN</p>
+                    </div>
+                </div>
+                <div class="itemFrame">
+                    <img src="{% static 'polls/images/dummyBook.svg' %}">
+                    <div class="textItemFrame">
+                        <h3 class="loanFace">UITGELEEND</h3>
+                        <br>
+                        <h2>BOEK 1 ICT</h2>
+                        <h4>AUTEUR</h4>
+                        <br>
+                        <p>DESCRIPTION: LOREM IPSUM IS AN EXAMPLE TEXT COMMONLY USED IN DESIGN</p>
+                    </div>
+                </div>
+                <div class="itemFrame">
+                    <img src="{% static 'polls/images/dummyBook.svg' %}">
+                    <div class="textItemFrame">
+                        <h3 class="loanFace">UITGELEEND</h3>
+                        <br>
+                        <h2>BOEK 1 ICT</h2>
+                        <h4>AUTEUR</h4>
+                        <br>
+                        <p>DESCRIPTION: LOREM IPSUM IS AN EXAMPLE TEXT COMMONLY USED IN DESIGN</p>
+                    </div>
+                </div>
+                <div class="itemFrame">
+                    <img src="{% static 'polls/images/dummyBook.svg' %}">
+                    <div class="textItemFrame">
+                        <h3 class="loanFace">UITGELEEND</h3>
+                        <br>
+                        <h2>BOEK 1 ICT</h2>
+                        <h4>AUTEUR</h4>
+                        <br>
+                        <p>DESCRIPTION: LOREM IPSUM IS AN EXAMPLE TEXT COMMONLY USED IN DESIGN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="cancelButton" style="margin-bottom: 25px; margin-top: 0px;"><a href="{% url 'confirmationScreen'%}">BEVESTIGEN</a></button>
+        </div>
+    </div>
+</body>
+</html>
