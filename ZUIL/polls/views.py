@@ -40,3 +40,6 @@ def reservationScreen(request):
 
 def confirmationScreen(request):
     return render(request, 'polls/confirmationScreen.html')
+
+def cancellationScreen(request):
+    return render(request, 'polls/cancellationScreen.html')
