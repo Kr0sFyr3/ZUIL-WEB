@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZUIL</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/styles/style.css' %}">
+</head>
+<body>
+    <div class="page">
+        <div class="scanLayout">
+            <div class="imageWrapper">
+                <a href="{% url 'home'%}">
+                    <img class="scanImage" src="{% static 'polls/images/confirmation.svg' %}">
+                </a>
+            </div>
+            <p class="scanText" style="margin-top: 50px;">SLUIT AUB DE DEUR</p>
+        </div>
+    </div>
+</body>
+</html>

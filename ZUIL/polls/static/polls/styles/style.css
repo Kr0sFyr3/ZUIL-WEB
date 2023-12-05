@@ -308,3 +308,60 @@ a{
         width: 60%
     }
 }
+
+/* reservationScreen css */
+.reservationTableViewContainer {
+    position: relative;
+    width: 65vw;
+    height: 80vh;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.reservationTableView {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.reservationTableView::before {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    clip-path: inset(10px 20px 10px 10px);
+    z-index: -1;
+}
+
+.reservationTableView img {
+    width: 95%;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.reservationTableView::-webkit-scrollbar {
+    width: 12px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.reservationTableView::-webkit-scrollbar-thumb {
+    background-color: #9ADE19;
+    border-radius: 10px;
+}
+
+.reservationTableView::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
